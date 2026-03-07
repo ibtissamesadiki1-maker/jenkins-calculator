@@ -1,6 +1,6 @@
 const app = require('./index');
-const port = 3000;
-//Commentaire
+const port = 8080;
+
 app.listen(port, () => {
-    console.log(`Calculatrice app listening on port ${port}`);
+    console.log(`Server running on port ${port}`);
 });
