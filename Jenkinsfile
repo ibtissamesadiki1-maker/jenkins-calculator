@@ -1,8 +1,9 @@
 pipeline {
     agent any
 
+    
     tools {
-        nodejs 'NodeJS' 
+        nodejs 'node-latest'   // <--- Hna fin kan l-ghalat, bdlna 'NodeJS' b 'node-latest'
     }
 
     stages {
