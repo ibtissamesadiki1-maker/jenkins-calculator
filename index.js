@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 
-// ... HNA KATKON LOGIQUE DYALK (ROUTES: /add, /divide...) ...
-// Mital:
 app.get('/add/:a/:b', (req, res) => {
     const result = parseInt(req.params.a) + parseInt(req.params.b);
     res.json({ result: result });
@@ -15,6 +13,6 @@ app.get('/divide/:a/:b', (req, res) => {
     const result = parseInt(req.params.a) / parseInt(req.params.b);
     res.json({ result: result });
 });
+//Commentaire
 
-// L-MOHIM HWA HADA: Exporté app, matdirch app.listen hna!
 module.exports = app;
